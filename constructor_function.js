@@ -1,3 +1,10 @@
+// constructor function / parent function/ mothership
+function person(name, age, gender){
+    this.name = name
+    this.age = age
+    this.gender = gender
+}
+
 // creating a new person based off mothership (personm function)
 // so create a variable with the person's name, and using the arguments in the function, write the new person's attributes
 // from the order in which the arguments are written.
