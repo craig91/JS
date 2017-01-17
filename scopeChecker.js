@@ -4,3 +4,15 @@ function checkScope() {
     alert(scope)
 }
 
+
+scope = "global"
+function checkScope() {
+    scope = "local";
+    document.write(scope);
+    myScope = "local";
+    document.write(myScope);
+}
+
+checkScope()
+document.write(scope)
+document.write(myScope)
