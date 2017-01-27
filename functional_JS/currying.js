@@ -27,3 +27,7 @@ greetHello("craig");
 greetHello("Dejean");
 
 // calling these will say hello craig hello dejean since hello was already called in the greetHello variable.
+
+// you can also call the function directly like this:
+
+iAmCurried("Hello there")("Craig")
