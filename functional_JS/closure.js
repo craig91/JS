@@ -30,3 +30,27 @@ var mjName = celebrityName("Michael");
 mjName("Jackson")
 
 // This one was a little tricky but I got it, it is also one of the most important things to understand about closures. The inner function ( lasName() ) still has access to the outer function's variables even after the outer function has returned. So var mjName is kind of hard coding the first name and then the 2nd mj name function call will be the last name, because of the inner function.
+
+
+function celebrityID () {
+  var celebrityID = 999;
+  return {
+    getID: function () {
+      return celebrityID; // reference to outer variable 1
+    },
+    setID: function (theNewID) {
+      // reference to outer variable 2
+      celebrityID = theNewID;
+    }
+  }
+}
+
+var mjID = celebrityID();
+mjID.getID();
+mjID.setID(567);
+mjID.getID();
+
+
+// references to the outer variable do not store the actual value.
+
+
