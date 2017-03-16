@@ -6,7 +6,7 @@ price = 5;
 quantity = 14;
 total = price * quantity;
 
-
+blahg  labdaiugFIAUSLVYGEWFUlwigufqewyofuywegiuyegwuyicgl
 var el = document.getElementById('cost');
 el = textContent = '$' + total;
 
